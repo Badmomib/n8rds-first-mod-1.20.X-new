@@ -2,6 +2,7 @@ package net.n8rd.n8rdsfirstmod;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.n8rd.n8rdsfirstmod.block.ModBlocks;
 import net.n8rd.n8rdsfirstmod.item.ModItemGroups;
 import net.n8rd.n8rdsfirstmod.item.ModItems;
 import org.slf4j.Logger;
@@ -16,6 +17,8 @@ public class N8rdsFirstMod implements ModInitializer {
 
 		//LOGGER.info("Hello Fabric world!");
 		ModItemGroups.registerItemGroups();
+
 		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 	}
 }
